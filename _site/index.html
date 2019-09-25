@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/dc.css">
+  <link href="css/c3.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+  <header class="header">
+    <div class="container my-4">
+    </div>
+  </header>
+  <div class="bg-light py-5">
+    <div class="container">
+      <div class="form-row justify-content-center mb-3">
+        <div class="input-group col-12 col-md-8 col-lg-5 mb-2 mb-xl-auto">
+          <div class="input-group-prepend"></div>
+        </div>
+      </div>
+        <div class="container">
+            <div class="form-row justify-content-center mb-1">
+              <div class="input-group col-12 col-md-8 col-lg-5 mb-2 mb-xl-auto">
+                <div class="input-group-prepend"></div>
+                  <select id="selectLeague" class="form-control">
+                    <option>Select League</option>
+                  </select>
+              </div>
+            </div>
+                <div class="form-row justify-content-center mb-1">
+                  <div class="input-group col-12 col-md-8 col-lg-5 mb-2 mb-xl-auto">
+                    <select id="selectTeamOne" class="form-control">
+                      <option>Select Team</option>
+                    </select>
+                    <select id="selectTeamTwo" class="form-control">
+                      <option>Select Team</option>
+                    </select>
+                    <button id="getGoalDataButton">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+      <div class="form-row justify-content-center mb-3">
+        <div class="row">
+          <table id="league-table">
+            <thead>  
+              <th>Position</th>
+              <th>Team</th>
+              <th>Played</th>
+              <th>Won</th>
+              <th>Drawn</th>
+              <th>Lost</th>
+              <th>For</th>
+              <th>Against</th>
+              <th>Difference</th>
+              <th>Points</th>
+            </thead>
+            <tbody id="league-table-body">
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="goalsLineChart"></div>
+    </div>
+    <div class="container">
+      <div id="goalsBarChart"></div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div id="pieOne"></div>
+        </div>
+        <div class="col">
+          <div id="pieTwo"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h2 id="fixtures-table-header">Upcoming Fixtures</h2>
+    <div class="form-row justify-content-center mb-3">
+      <div class="row">
+        <table id="fixtures-table">
+          <thead>  
+            <th>Home Team</th>
+            <th>Away Team</th>
+            <th>Time</th>
+            <th>Date</th>
+          </thead>
+          <tbody id="fixtures-table-body">
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/d3.min.js"></script>
+  <script src="js/c3.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script type="text/javascript" src="js/crossfilter.js"></script>
+  <script type="text/javascript" src="js/dc.js"></script>
+  <script type="text/javascript" src="js/print_filter.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
