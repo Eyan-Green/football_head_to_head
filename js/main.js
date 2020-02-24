@@ -81,6 +81,7 @@ const getFixtureDate = (league_id) => {
 }
 // populate's league standings
 const prepareLeageStandings = (data) => {
+	data.sort((a,b) => (parseInt(a.overall_league_position) > parseInt(b.overall_league_position)) ? 1 : -1)
 	let body = document.getElementById('league-table-body')
 	body.innerHTML = '';
 	document.getElementById('league-table').style.display = "block";
